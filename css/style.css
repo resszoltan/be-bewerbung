@@ -227,8 +227,8 @@ li {
     overflow: hidden;
 }
 .height-auto {
-    height: auto;
-    border: 5px solid var(--color-gray);
+    height: 100%;
+    /*border: 5px solid var(--color-gray);*/
     border-radius: 40px;
     z-index: -1;
 }
@@ -242,7 +242,7 @@ li {
     z-index: 2;
     /* Der Kreis-Ausschnitt */
     mask: radial-gradient(circle 120px at center, transparent 100%, black 100%);
-    -webkit-mask: radial-gradient(circle 96px at 48% 112px, transparent 100%, black 100%);
+    -webkit-mask: radial-gradient(circle 120px at 48% 135px, transparent 100%, black 100%);
     /* Initial unsichtbar */
     opacity: 0;    
 }
