@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bewerbung von Zoltan Ress</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+
+        <div class="viewport">
+            
+            <!-- Landing Page -->
+            <div class="card current-card" data-card="landing">
+
+                <div class="header"></div>
+
+                <div class="content center">
+                    <span>Ich glaube, ich habe den</span>
+                    <strong style="font-size: x-large; text-shadow: var(--shadow-light);">Zündschlüssel</strong>
+                    <span>gefunden...</span><br>
+                    <img src="img/Schlüssel-2.png" width="107" height="130"><br>
+                    <span>... für meinen</span>
+                    <strong style="font-size: x-large; color: var(--color-red); text-shadow: var(--shadow-light);">neuen Job!</strong>
+                </div>
+
+                <div class="footer">
+                    <div class="container-up-down">
+                        <!-- Text 1, mit alternativem Einblenden -->
+                        <div class="box box1">
+                            <span class="footer-text left-mobile">nach oben</span>
+                            <span class="footer-text left-desktop">hier</span>
+                        </div>
+                        <!-- Navigation 1 -->
+                        <div class="box box2">
+                            <button class="arrow-button" onclick="navigateCard('landing', 'preview', 'up')">
+                                <div class="arrow-circle arrow-bounce-down">
+                                    <svg class="arrow arrow-bounce-down" width="50" height="50" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" fill="white" />
+                                        <path d="M12 6v12m0 0l-4-4m4 4l4-4"
+                                        stroke="rgb(127,127,127)" stroke-width="3" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" transform="rotate(180)" transform-origin="center" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <!-- Text 2, mit alternativem Einblenden -->
+                        <div class="box">
+                            <span class="footer-text right-mobile">wischen</span>
+                            <span class="footer-text right-desktop">klicken</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Preview Page -->
+            <div class="card" data-card="preview">
+                
+                <div class="header"></div>
+
+                <div class="content center">
+                    <span style="font-family: BBH Hegarty; font-size: 3rem; margin-bottom: var(--spacing-lg);">Moin!</span>
+                    <span style="margin-bottom: var(--spacing-sm);">Mein Name ist</span>
+                    <span style="font-family: BBH Hegarty; font-size: 2.5rem; line-height: 3rem; text-shadow: var(--shadow-light);">Zoltan</span>
+                    <span style="font-family: BBH Hegarty; font-size: 3.3rem; line-height: 3.3rem; text-shadow: var(--shadow-light); 
+                        color: var(--color-red); margin-bottom: 50px;">Ress</span>
+                </div>
+
+                <div class="footer">
+                    <div class="container-up-down">
+                        <!-- Text 1, mit alternativem Einblenden -->
+                        <div class="box box1"></div>
+                        <!-- Navigation 2 -->
+                        <div class="box box2">
+                            <button class="arrow-button" onclick="navigateCard('preview', 'presy', 'up')">
+                                <div class="arrow-circle arrow-bounce-down">
+                                    <svg class="arrow arrow-bounce-down" width="50" height="50" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" fill="white" />
+                                        <path d="M12 6v12m0 0l-4-4m4 4l4-4"
+                                        stroke="rgb(127,127,127)" stroke-width="3" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" transform="rotate(180)" transform-origin="center" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <!-- Text 2, mit alternativem Einblenden -->
+                        <div class="box"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Presentation Page -->
+            <div class="card" data-card="presy">
+
+                <!-- Background Effect (mit z-index=-1 kommt dieser Block unter den Textinhalt) --> 
+                <div class="absolute height-auto">
+                    <!-- Background Mask -->
+                    <div id="maskOverlay" class="absolute mask"></div>
+                    <!-- Background Overlay -->
+                    <div class="absolute height-100"></div>
+                    <!-- Video -->
+                    <video id="bgVideo" width="100%" max-width="300px" height="auto" playsinline muted style="object-fit: cover; z-index: -1;">
+                        <source src="img/itsMe.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <!-- Der eigentliche Inhalt der Karte "Presentation Page" ab hier... -->
+                <div class="header"></div>
+
+                <div id="textAtTheBottom" class="content bottom">
+                    <!-- "Ich bin im Grunde ein gutmütiger Mensch (...)" -->
+                    Ich bin im Grunde ein gutmütiger Mensch mit vielfältigen Interessen und einer guten Lern- und 
+                    Anpassungsfähigkeit. So war ich als
+                    <ul>
+                        <li id="LE-1">Rechtsanwalt (in Ungarn),</li>
+                        <li id="LE-2">Fachinformatiker und nicht zuletzt</li>
+                        <li id="LE-3">Paketbote 32 Monate lang bei DHL Express</li>
+                    </ul>
+                    schon in meinem Leben tätig.
+                </div>
+
+                <div class="footer">
+                    <div class="container-left-right">
+                        <div class="footer-text">zum</div>
+                        <div class="footer-text">zu den</div>
+                    </div>
+                
+                    <div class="container-left-right">
+                        <!-- Navigation 3 (Button nach rechts) -->
+                        <button class="arrow-button" onclick="navigateCard('presy', 'cv', 'right')">
+                            <div class="arrow-circle arrow-bounce-left">
+                                <svg class="arrow arrow-bounce-left" width="50" height="50" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" fill="white" />
+                                    <path d="M6 12h12m0 0l-4-4m4 4l-4 4"
+                                    stroke="rgb(127,127,127)" stroke-width="3" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </button>
+
+                        <!-- Navigation 4 (Button nach links) -->
+                        <button class="arrow-button" onclick="navigateCard('presy', 'others', 'left')">
+                            <div class="arrow-circle arrow-bounce-right">
+                                <svg class="arrow arrow-bounce-right" width="50" height="50" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" fill="white" />
+                                    <path d="M18 12H6m0 0l4-4m-4 4l4 4"
+                                    stroke="rgb(127,127,127)" stroke-width="3" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="container-left-right">
+                        <span class="footer-text">Lebenslauf</span>
+                        <span class="footer-text">Sonstigen</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CV Page -->
+            <div class="card" data-card="cv">
+                
+                <div class="header"></div>
+
+                <div class="content top">
+                    <div style="text-align: center; font-size: x-large; text-shadow: var(--shadow-light);"><strong>Lebenslauf</strong><br><br></div>
+                    <div class="row">
+                        <div style="width: 32%;">Geboren</div>
+                        <div style="width: 68%; padding-left: var(--spacing-sm);">am 17.10.1972<br>in Budapest (Ungarn)</div>
+                    </div>
+                    <div class="row">
+                        <div style="width: 32%;">Familienstand</div>
+                        <div style="width: 68%; padding-left: var(--spacing-sm);">verheiratet, 4 Kinder</div>
+                    </div>
+                    <div class="row">
+                        <div style="width: 32%;">2021-24</div>
+                        <div style="width: 68%; padding-left: var(--spacing-sm);">neusta aerospace GmbH - Erster Job in der IT-Welt</div>
+                    </div>
+                    <div class="row">
+                        <div style="width: 32%;">2019-20</div>
+                        <div style="width: 68%; padding-left: var(--spacing-sm);">Umschulung für Fachinformatiker, Fachrichtung Anwendungsentwicklung</div>
+                    </div>
+                    <div class="row">
+                        <div style="width: 32%;">2016-19</div>
+                        <div style="width: 68%; padding-left: var(--spacing-sm);">Paketbote für DHL Express</div>
+                    </div>
+                    <div class="row">
+                        <div style="width: 32%;">2004-15</div>
+                        <div style="width: 68%; padding-left: var(--spacing-sm);">Rechtsanwaltpraxis in eigener Kanzlei</div>
+                    </div>
+                    <div class="row">
+                        <div style="width: 32%;">1994-2004</div>
+                        <div style="width: 68%; padding-left: var(--spacing-sm);">Studium, Referendiat, Staatsexamen</div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="container-up-down">
+                        <!-- Text 1, mit alternativem Einblenden -->
+                        <div class="box box1"></div>
+                        <!-- Navigation 2 -->
+                        <div class="box box2">
+                            <button class="arrow-button" onclick="navigateCard('cv', 'ende', 'up')">
+                                <div class="arrow-circle arrow-bounce-down">
+                                    <svg class="arrow arrow-bounce-down" width="50" height="50" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" fill="white" />
+                                        <path d="M12 6v12m0 0l-4-4m4 4l4-4"
+                                        stroke="rgb(127,127,127)" stroke-width="3" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" transform="rotate(180)" transform-origin="center" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <!-- Text 2, mit alternativem Einblenden -->
+                        <div class="box"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Others Page -->
+            <div class="card" data-card="others">
+                
+                <div class="header"></div>
+
+                <div class="content">
+                    <div style="text-align: center; font-size: x-large; text-shadow: var(--shadow-light);"><strong>Warum...</strong><br><br></div>
+                    <strong>... wenn ich Recht studierte?</strong>
+                    Weil mein Diplom in Deutschland nicht anerkannt ist.<br><br>
+                    <strong>... wenn ich auch ein zertifizierter Fachinformatiker bin?</strong>
+                    Weil ich momentan einen möglichst stressfreien Job suche.<br><br>
+                </div>
+
+                <div class="footer">
+                    <div class="container-up-down">
+                        <!-- Text 1, mit alternativem Einblenden -->
+                        <div class="box box1"></div>
+                        <!-- Navigation 2 -->
+                        <div class="box box2">
+                            <button class="arrow-button" onclick="navigateCard('others', 'ende', 'up')">
+                                <div class="arrow-circle arrow-bounce-down">
+                                    <svg class="arrow arrow-bounce-down" width="50" height="50" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" fill="white" />
+                                        <path d="M12 6v12m0 0l-4-4m4 4l4-4"
+                                        stroke="rgb(127,127,127)" stroke-width="3" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" transform="rotate(180)" transform-origin="center" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <!-- Text 2, mit alternativem Einblenden -->
+                        <div class="box"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Thanksgiving Page -->
+            <div class="card" data-card="ende">
+                
+                <div class="header" style="background-color: var(--color-lightgray);">
+                    <div class="content center">
+                        <!-- Navigation 7 (Home button) -->
+                        <button class="home-button" id="homeButton" onclick="navigateCard('ende', 'landing', 'down')">
+                            <div class="arrow-circle">
+                                <svg class="arrow" width="50" height="50" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" fill="white" />
+                                    <path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 10 21 L 10 14 L 14 14 L 14 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z"
+                                    stroke="rgb(127,127,127)" stroke-width="2" fill="rgb(127,127,127)"
+                                    stroke-linecap="square" stroke-linejoin="square" transform="scale(0.6)" transform-origin="center" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="content center">
+                    <div style="width: 100%; height: 50%; display: flex; justify-content: center; align-items: center;">
+                        <strong style="font-size: x-large; text-shadow: var(--shadow-light); text-align: center;">Vielen Dank<br>
+                            f&uuml;r<br>
+                            Ihre Zeit.</strong>
+                    </div>                    
+                    <div class="personal-info">Eventuell ein persönliches Gespräch? Ich freue mich drauf!<br>
+                        <span style="padding-left: 1.2rem;">😎 Zoltan Ress</span><br>
+                        <span style="padding-left: 1.2rem;">📬 Bansiner Str. 68, 28717 Bremen</span><br>
+                        <span style="padding-left: 1.2rem;">☎️ +49 1525 200 63 98</span><br>
+                        <span style="padding-left: 1.2rem;">⚡ <a href="mailto:zoltan.ress.prv@gmail.com?subject=Einladung%20zum%20Bewerbungsgespräch&body=Sehr%20geehrte%20Herr%20Ress,%20" target="_top">zoltan.ress.prv@gmail.com</a></span><br>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div style="width: 100%; height: 10vh; background-color: var(--color-red);"></div>                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>
