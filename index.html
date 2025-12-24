@@ -104,15 +104,15 @@
 
                 <!-- Background Effect (mit z-index=-1 kommt dieser Block unter den Textinhalt) --> 
                 <div class="absolute height-auto">
-                    <!-- Background Mask -->
-                    <div id="maskOverlay" class="absolute mask"></div>
-                    <!-- Background Overlay -->
-                    <div class="absolute height-100"></div>
-                    <!-- Video -->
-                    <video id="bgVideo" width="100%" max-width="300px" height="auto" playsinline muted style="object-fit: cover; z-index: -1;">
+                    <!-- Background Video -->
+                    <video id="bgVideo" width="100%" height="auto" playsinline muted style="object-fit: cover; z-index: -1;">
                         <source src="img/itsMe.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <!-- Background Overlay -->
+                    <div class="absolute height-100"></div>
+                    <!-- Background Mask -->
+                    <div id="maskOverlay" class="absolute mask"></div>
                 </div>
                 
                 <!-- Der eigentliche Inhalt der Karte "Presentation Page" ab hier... -->
@@ -124,8 +124,8 @@
                     Anpassungsfähigkeit. So war ich als
                     <ul>
                         <li id="LE-1">Rechtsanwalt (in Ungarn),</li>
-                        <li id="LE-2">Fachinformatiker und nicht zuletzt</li>
-                        <li id="LE-3">Paketbote 32 Monate lang bei DHL Express</li>
+                        <li id="LE-2">Fachinformatiker, und nicht zuletzt</li>
+                        <li id="LE-3"><strong style="color: var(--color-red)">Paketbote 32 Monate lang bei DHL Express</strong></li>
                     </ul>
                     schon in meinem Leben tätig.
                 </div>
@@ -190,7 +190,7 @@
                     </div>
                     <div class="row">
                         <div style="width: 32%;">2019-20</div>
-                        <div style="width: 68%; padding-left: var(--spacing-sm);">Umschulung für Fachinformatiker, Fachrichtung Anwendungsentwicklung</div>
+                        <div style="width: 68%; padding-left: var(--spacing-sm);">Umschulung Fachinformatiker, Fachrichtung Anwendungsentwicklung</div>
                     </div>
                     <div class="row">
                         <div style="width: 32%;">2016-19</div>
