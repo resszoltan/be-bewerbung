@@ -296,20 +296,26 @@ li {
 .col-A-25 {
     width: 25%;
     padding-left: var(--spacing-sm);
+    font-style: italic;
+    font-weight: bold;
 }
 .col-A-35 {
     width: 35%;
     padding-left: var(--spacing-sm);
+    font-style: italic;
+    font-weight: bold;
 }
 .col-B-75 {
     width: 75%;
     padding-right: var(--spacing-sm);
     text-align: right;
+    font-style: italic;
 }
 .col-B-65 {
     width: 65%;
     padding-right: var(--spacing-sm);
     text-align: right;
+    font-style: italic;
 }
 
 .card[data-card="others"] {
