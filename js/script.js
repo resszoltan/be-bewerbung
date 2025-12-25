@@ -132,6 +132,23 @@ viewport.addEventListener('touchend', function(e) {
     handleSwipe();
 }, false);
 
+function getVisibleCard() {
+    const cards = document.querySelectorAll('.card');
+    let highestZIndex = -1;
+    let visibleCard = null;
+
+    cards.forEach(card => {
+        if (card.classList.contains('hidden')) return;
+        const zIndex = parseInt(window.getComputedStyle(card).zIndex);
+        if (zIndex > highestZIndex) {
+            highestZIndex = zIndex;
+            visibleCard = card.getAttribute('data-card');
+        }
+    });
+
+    return visibleCard;
+}
+
 function handleSwipe() {
     const deltaX = touchEndX - touchStartX;
     const deltaY = touchEndY - touchStartY;
@@ -158,25 +175,6 @@ function handleSwipe() {
         }
     }
 }
-
-
-function getVisibleCard() {
-    const cards = document.querySelectorAll('.card');
-    let highestZIndex = -1;
-    let visibleCard = null;
-
-    cards.forEach(card => {
-        if (card.classList.contains('hidden')) return;
-        const zIndex = parseInt(window.getComputedStyle(card).zIndex);
-        if (zIndex > highestZIndex) {
-            highestZIndex = zIndex;
-            visibleCard = card.getAttribute('data-card');
-        }
-    });
-
-    return visibleCard;
-}
-
 
 function handleSwipeGesture(currentCard, direction) {
     // Definiere Swipe-Navigation basierend auf aktueller Card
@@ -211,6 +209,7 @@ function handleSwipeGesture(currentCard, direction) {
     }
 }
 
+
 // Prüfe URL-Parameter beim Laden
 window.addEventListener('DOMContentLoaded', () => {
     const returnCard = sessionStorage.getItem('returnCard');
@@ -220,17 +219,3 @@ window.addEventListener('DOMContentLoaded', () => {
         sessionStorage.removeItem('returnCard');
     }
 });
-
-function setTheme(themeName) {
-    // Zugriff auf das html-Element
-    const htmlElement = document.documentElement;
-    
-    // Alle theme-Klassen entfernen
-    htmlElement.classList.remove('theme-light', 'theme-dark', 'theme-ocean');
-    
-    // Neue Klasse hinzufügen
-    htmlElement.classList.add(themeName);
-    
-    // Anzeige aktualisieren
-    document.getElementById('class-display').textContent = themeName;
-}
