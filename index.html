@@ -27,7 +27,8 @@
                     <span>gefunden...</span><br>
                     <img src="img/Schlüssel-2.png" width="107" height="130"><br>
                     <span>... für meinen</span>
-                    <strong style="font-size: x-large; color: var(--color-red); text-shadow: var(--shadow-light);">neuen Job!</strong>
+                    <strong style="font-size: x-large; color: var(--color-red); text-shadow: var(--shadow-light);">neuen Job</strong>
+                    <span>beim <span style="font-size: x-large; font-weight: bold; font-style: italic;">Bremer</span><span style="font-size: x-large; font-weight: bold; font-style: italic; color: var(--color-red);">Express</span></span>
                 </div>
 
                 <div class="footer">
@@ -67,11 +68,15 @@
                 <div class="header"></div>
 
                 <div class="content center">
-                    <span style="font-family: BBH Hegarty; font-size: 3rem; margin-bottom: var(--spacing-lg);">Moin!</span>
-                    <span style="margin-bottom: var(--spacing-sm);">Mein Name ist</span>
-                    <span style="font-family: BBH Hegarty; font-size: 2.5rem; line-height: 3rem; text-shadow: var(--shadow-light);">Zoltan</span>
-                    <span style="font-family: BBH Hegarty; font-size: 3.3rem; line-height: 3.3rem; text-shadow: var(--shadow-light); 
-                        color: var(--color-red); margin-bottom: 50px;">Ress</span>
+                    <div style="height: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <span style="font-family: BBH Hegarty; font-size: 3rem; margin-bottom: var(--spacing-lg);">Moin!</span>
+                    </div>
+                    <div style="height: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;">                    
+                        <span style="margin-bottom: var(--spacing-sm); font-size: var(--font-size-medium-plus);"><strong>Mein Name ist</strong></span>
+                        <span style="font-family: BBH Hegarty; font-size: 2.5rem; line-height: 3rem; text-shadow: var(--shadow-light);">Zoltan</span>
+                        <span style="font-family: BBH Hegarty; font-size: 3.3rem; line-height: 3.3rem; text-shadow: var(--shadow-light); 
+                            color: var(--color-red); margin-bottom: 50px;">Ress</span>
+                    </div>
                 </div>
 
                 <div class="footer">
@@ -124,7 +129,7 @@
                     Anpassungsfähigkeit. So war ich als
                     <ul>
                         <li id="LE-1">Rechtsanwalt (in Ungarn),</li>
-                        <li id="LE-2">Fachinformatiker, und nicht zuletzt</li>
+                        <li id="LE-2">Fachinformatiker und nicht zuletzt</li>
                         <li id="LE-3"><strong style="color: var(--color-red)">Paketbote 32 Monate lang bei DHL Express</strong></li>
                     </ul>
                     schon in meinem Leben tätig.
@@ -175,14 +180,14 @@
                 <div class="header"></div>
 
                 <div class="content top">
-                    <div style="text-align: center; font-size: x-large; text-shadow: var(--shadow-light);"><strong>Blitz-Lebenslauf</strong><br><br></div>
+                    <div style="text-align: center; font-size: x-large; text-shadow: var(--shadow-light);"><strong style="color: var(--color-red);">Blitz-Lebenslauf</strong><br><br></div>
                     <div class="row">
                         <div style="width: 25%;">Geboren:</div>
                         <div style="width: 75%;">am 17.10.1972<br>in Budapest (Ungarn)</div>
                     </div>
                     <div class="row">
                         <div style="width: 32%;">Familienstand:</div>
-                        <div style="width: 68%; padding-left: var(--spacing-sm);">verheiratet, 4 Kinder</div>
+                        <div style="width: 68%; padding-left: var(--spacing-sm);">verheiratet, 4 Kinder<br><br></div>
                     </div>
                     <div class="row">
                         <div style="width: 25%;">2021-24:</div>
@@ -212,7 +217,7 @@
                         <div class="box box1"></div>
                         <!-- Navigation 2 -->
                         <div class="box box2">
-                            <button class="arrow-button" onclick="navigateCard('cv', 'ende', 'up')">
+                            <button class="arrow-button" onclick="navigateCard('cv', 'likes', 'up')">
                                 <div class="arrow-circle arrow-bounce-down">
                                     <svg class="arrow arrow-bounce-down" width="50" height="50" viewBox="0 0 24 24">
                                         <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" fill="white" />
@@ -237,7 +242,7 @@
                 <div class="header"></div>
 
                 <div class="content">
-                    <div style="text-align: center; font-size: x-large; text-shadow: var(--shadow-light);"><strong>Warum denn die Bewerbung...</strong><br><br></div>
+                    <div style="text-align: center; font-size: x-large; text-shadow: var(--shadow-light);"><strong style="color: var(--color-red);">Warum denn die Bewerbung...</strong><br><br></div>
                     <strong>... wenn ich ein studierter Jurist bin?</strong>
                     Weil mein Diplom in Deutschland nicht anerkannt ist und 
                     der Statt eine zweite Ausbildung nicht fördert.<br><br>
@@ -252,7 +257,51 @@
                         <div class="box box1"></div>
                         <!-- Navigation 2 -->
                         <div class="box box2">
-                            <button class="arrow-button" onclick="navigateCard('others', 'ende', 'up')">
+                            <button class="arrow-button" onclick="navigateCard('others', 'likes', 'up')">
+                                <div class="arrow-circle arrow-bounce-down">
+                                    <svg class="arrow arrow-bounce-down" width="50" height="50" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" fill="white" />
+                                        <path d="M12 6v12m0 0l-4-4m4 4l4-4"
+                                        stroke="rgb(127,127,127)" stroke-width="3" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" transform="rotate(180)" transform-origin="center" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <!-- Text 2, mit alternativem Einblenden -->
+                        <div class="box"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Likes Page -->
+            <div class="card" data-card="likes">
+                
+                <div class="header"></div>
+
+                <div class="content">
+                    <div style="text-align: center; font-size: x-large; text-shadow: var(--shadow-light);"><strong style="color: var(--color-red);">Mir gefällt...</strong><br><br></div>
+                    
+                    <strong>... das gepflegte und professionelle Image, das Sie über Ihre Website vermitteln.</strong>
+                    Ich würde gern Teil eines gut organisierten Teams sein.<br><br>
+                    
+                    <strong>... dass Sie für faire und ordentliche Arbeitsbedingungen sorgen.</strong>
+                    Ich schätze unter anderem und vor allem, dass Sie die modernste Fahrzeuge zur Verfügung stellen und 
+                    eine attraktive Vergütung bieten.<br><br>
+                    
+                    Ich würde Sie gerne besser kennenlernen! Was Sie von einem Fahrer erwarten (Führerschein Klasse B, 
+                    Zuverlässigkeit, Pünktlichkeit usw.), bringe ich gerne mit.<br>
+                </div>
+
+                <div class="footer">
+                    <div class="container-up-down">
+                        <!-- Text 1, mit alternativem Einblenden -->
+                        <div class="box box1"></div>
+                        <!-- Navigation 2 -->
+                        <div class="box box2">
+                            <button class="arrow-button" onclick="navigateCard('likes', 'ende', 'up')">
                                 <div class="arrow-circle arrow-bounce-down">
                                     <svg class="arrow arrow-bounce-down" width="50" height="50" viewBox="0 0 24 24">
                                         <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" fill="white" />
@@ -305,7 +354,11 @@
                 </div>
 
                 <div class="footer">
-                    <div style="width: 100%; height: 10vh; background-color: var(--color-red);"></div>                    
+                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 10vh; background-color: var(--color-red); font-size: var(--font-size-small); color: var(--color-white);">
+                        &copy; 2025 Zoltan Ress<br>
+                        Ein Bewerbungsunterstützungsprojekt<br>
+                        zum BremerExpress.
+                    </div>                    
                 </div>
 
             </div>
