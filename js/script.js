@@ -4,20 +4,7 @@
     Datum: 2025-12-18
 ----------------------------------------------------------- */
 
-let chooseVisitCount = 0;
 let isAnimating = false;
-let isDarkMode = false;
-
-function setTheme(themeName) {
-    // Zugriff auf das html-Element
-    const htmlElement = document.documentElement;
-    
-    // Alle theme-Klassen entfernen
-    htmlElement.classList.remove('theme-light', 'theme-dark', 'theme-ocean');
-    
-    // Neue Klasse hinzufügen
-    htmlElement.classList.add(themeName);
-}
 
 function navigateCard(fromCard, toCard, direction) {
     if (isAnimating) return;
@@ -205,10 +192,13 @@ function handleSwipeGesture(currentCard, direction) {
             'left': ['presy', 'others', 'left']
         },
         'cv': {
-            'up': ['cv', 'ende', 'up']
+            'up': ['cv', 'likes', 'up']
         },
         'others': {
-            'up': ['others', 'ende', 'up']
+            'up': ['others', 'likes', 'up']
+        },
+        'likes': {
+            'up': ['likes', 'ende', 'up']
         },
         'ende': {
             'down': ['ende', 'landing', 'down']
