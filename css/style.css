@@ -293,6 +293,24 @@ li {
     /*background-color: var(--color-darkergray);*/
     background: linear-gradient(135deg, white 0%, var(--color-darkgray) 100%);
 }
+.col-A-25 {
+    width: 25%;
+    padding-left: var(--spacing-sm);
+}
+.col-A-35 {
+    width: 35%;
+    padding-left: var(--spacing-sm);
+}
+.col-B-75 {
+    width: 75%;
+    padding-right: var(--spacing-sm);
+    text-align: right;
+}
+.col-B-65 {
+    width: 65%;
+    padding-right: var(--spacing-sm);
+    text-align: right;
+}
 
 .card[data-card="others"] {
     /*background-color: var(--color-darkergray);*/
@@ -307,6 +325,7 @@ li {
 .card[data-card="ende"] {
     background: linear-gradient(135deg, white 0%, var(--color-darkgray) 100%);
 }
+
 
 /* ==========================================================
     NAVIGATION BUTTONS
@@ -417,37 +436,28 @@ li {
 @media (min-width: 1900px) {
     .card { height: 100vh; }
 
-    .card[data-card="landing"] p { font-size: 2.4rem; max-width: 600px; }    
-    .left-mobile, .right-mobile, .lower-mobile { display: none; }    
+    .card[data-card="landing"] p { font-size: 2.4rem; max-width: 600px; }
+    .left-mobile, .right-mobile, .lower-mobile { display: none; }
     .left-desktop, .right-desktop, .lower-desktop { display: inline; }
 
     .card .content { max-width: 600px; }
 
-    .card[data-card="preview"] .content { width: 600px; }    
-    .card[data-card="preview"] h2 { font-size: 3.5rem; }    
-    .card[data-card="preview"] p { font-size: 2.4rem; max-width: 600px; }    
-    .char-title { font-size: var(--font-size-xlarge); }    
-    img.choose { width: 320px; }    
+    .card[data-card="preview"] .content { width: 600px; }
     .deko2 { height: 480px; width: var(--spacing-lg); }    
     .navigation { width: 25%; }
 
     .card[data-card="cv"] h2 { font-size: 3.5rem; }
-    .progress-circle { width: 120px; height: 120px; }
-    .progress-number { font-size: 1.8rem; }
             
     .card[data-card="others"] h2 { font-size: 3.5rem; }
 
     .centered-div { width: 600px; }
 
     .nav-button { width: 300px; }
-        
+    
+    .card[data-card="ende"] .content { max-width: 360px; }
     .card[data-card="ende"] h2 { font-size: 3.5rem; }
 
     .container { flex-wrap: nowrap; }
-
-    .deko4 { width: 17%; }
-    
-    .card[data-card="ende"] .content { max-width: 360px; }
 }
 
 @media (max-width: 420px) {
