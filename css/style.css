@@ -237,7 +237,7 @@ li {
 }
 .mask {
     height: 100vh;
-    background-color: var(--color-darkgray);
+    background: linear-gradient(135deg, white 0%, var(--color-darkgray) 100%);
     z-index: 2;
     /* Der Kreis-Ausschnitt */
     mask: radial-gradient(circle 120px at center, transparent 100%, black 100%);
@@ -272,34 +272,40 @@ li {
     CARD THEMES (Nur Farben/spezifische Stile)
 ========================================================== */
 .card[data-card="landing"] {
-    background-color: var(--color-lightergray);
+    /*background-color: var(--color-lightergray);*/
+    background: linear-gradient(135deg, white 0%, var(--color-darkgray) 100%);
 }
 .card[data-card="landing"] h1 {
     text-shadow: var(--shadow-heavy);
 }
 
 .card[data-card="preview"] {
-    background-color: var(--color-lightgray);
+    /*background-color: var(--color-lightgray);*/
+    background: linear-gradient(135deg, white 0%, var(--color-darkgray) 100%);
 }
 
 .card[data-card="presy"] {
-    background-color: var(--color-darkgray);
+    /*background-color: var(--color-darkgray);*/
+    background: linear-gradient(135deg, white 0%, var(--color-darkgray) 100%);
 }
 
 .card[data-card="cv"] {
-    background-color: var(--color-darkergray);
+    /*background-color: var(--color-darkergray);*/
+    background: linear-gradient(135deg, white 0%, var(--color-darkgray) 100%);
 }
 
 .card[data-card="others"] {
-    background-color: var(--color-darkergray);
+    /*background-color: var(--color-darkergray);*/
+    background: linear-gradient(135deg, white 0%, var(--color-darkgray) 100%);
 }
 
 .card[data-card="likes"] {
-    background-color: var(--color-darkestgray);
+    /*background-color: var(--color-darkestgray);*/
+    background: linear-gradient(135deg, white 0%, var(--color-darkgray) 100%);
 }
 
 .card[data-card="ende"] {
-    background: linear-gradient(var(--color-lightergray) 0%, white 50%, var(--color-lightergray) 100%);
+    background: linear-gradient(135deg, white 0%, var(--color-darkgray) 100%);
 }
 
 /* ==========================================================
